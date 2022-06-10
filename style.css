@@ -41,7 +41,7 @@ header img {
   align-self: center;
 }
 
-.header--title-container {
+.header__title-container {
   width: 90%;
   min-width: 288px;
   max-width: 900px;
@@ -51,17 +51,45 @@ header img {
   align-self: center;
 }
 
-.header--title-container h1 {
+.header__title-container h1 {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 2.6rem;
   color: var(--white);
 }
 
-.header--title-container p {
+.header__title-container p {
   margin-top: 24px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--soft-orange);
+}
+
+.header__title-container .header__button {
+  position: absolute;
+  left: calc(50% - 114.5px);
+  top: 270px;
+  display: block;
+  margin-top: 35px;
+  padding: 15px 16px;
+  width: 229px;
+  height: 48px;
+  background-color: var(--off-white);
+  /* Shadow */
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--warm-black);
+}
+
+.header__button span {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  margin-left: 14px;
+  background-image: url("https://gist.githack.com/CabosManuel/e85ff4f45b2a9a8c6ce7decb14b2ae84/raw/9768cf9d9734ef34a7125d0c2c9b6d38934609c7/down-arrow.svg");
 }
