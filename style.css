@@ -106,7 +106,6 @@ main {
   width: 100%;
   height: auto;
   background-color: var(--off-white);
-  
 }
 
 .main__exchange-container {
@@ -165,18 +164,21 @@ main {
 
 .main-currency-table .currency-table__title {
   margin-bottom: 12px;
+  margin-left: 16px;
+
   font-family: "DM Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.3rem;
   color: var(--orange);
+  text-align: start;
 }
 
 .currency-table__container {
   width: 90%;
   min-width: 230px;
   max-width: 300px;
-  height: 250px;
+  height: 156px;
   margin: 0 auto;
 }
 
@@ -192,4 +194,47 @@ main {
   line-height: 1.9rem;
   color: var(--gray);
   background-color: var(--white);
+  
+  text-align: start;
+  padding: 0 12px;
+}
+
+.currency-table__container .table--top-left {
+  border-radius: 10px 0 0 0;
+}
+.currency-table__container .table--top-right {
+  border-radius: 0 10px 0 0;
+}
+.currency-table__container .table--botom-left {
+  border-radius: 0 0 0 10px;
+}
+.currency-table__container .table--botom-right {
+  border-radius: 0 0 10px 0;
+}
+
+.currency-table__container .table--right {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-align: center;
+  color: #757575;
+}
+
+.currency-table__container .table--right span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+
+  margin-left: 10px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.currency-table__container .down {
+  background-image: url("https://gist.githack.com/CabosManuel/ec98a02c09fe2f8aa1050e02c4958bb5/raw/478ce8d39be46f110fce1387e4bde1b4262a9d65/trending-down.svg");
+}
+.currency-table__container .up {
+  background-image: url("https://gist.githack.com/CabosManuel/2350e1844f8699ddfc35744f0cb48513/raw/7cac2b70e223e904277aeefe47eefb426d79ce15/trending-up.svg");
 }
