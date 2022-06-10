@@ -23,13 +23,15 @@ html {
 }
 
 header {
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  min-width: 320px;
-  height: 334px;
+  
   text-align: center;
   background: linear-gradient(207.8deg, var(--warm-black) 16.69%, var(--orange) 100%);
 }
@@ -37,6 +39,7 @@ header {
 header img {
   width: 150px;
   height: 24px;
+
   margin-top: 60px;
   align-self: center;
 }
@@ -46,6 +49,7 @@ header img {
   min-width: 288px;
   max-width: 900px;
   height: 218px;
+
   margin-top: 50px;
   text-align: center;
   align-self: center;
@@ -67,23 +71,26 @@ header img {
 }
 
 .header__title-container .header__button {
+  width: 229px;
+  height: 48px;
+
   position: absolute;
   left: calc(50% - 114.5px);
   top: 270px;
   display: block;
   margin-top: 35px;
   padding: 15px 16px;
-  width: 229px;
-  height: 48px;
+  
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--warm-black);
+
   background-color: var(--off-white);
   /* Shadow */
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border: none;
   border-radius: 4px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--warm-black);
 }
 
 .header__button span {
@@ -92,4 +99,26 @@ header img {
   height: 8px;
   margin-left: 14px;
   background-image: url("https://gist.githack.com/CabosManuel/e85ff4f45b2a9a8c6ce7decb14b2ae84/raw/9768cf9d9734ef34a7125d0c2c9b6d38934609c7/down-arrow.svg");
+}
+
+main {
+  min-width: 320px;
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+
+}
+
+.main__exchange-container {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+
+.main__exchange-container__title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
 }
