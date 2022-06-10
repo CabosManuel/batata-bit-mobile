@@ -106,14 +106,15 @@ main {
   width: 100%;
   height: auto;
   background-color: var(--off-white);
-
+  
 }
 
 .main__exchange-container {
   width: 100%;
   height: auto;
-  padding-top: 80px;
+  padding-top: 59px;
   padding-bottom: 48px;
+  text-align: center;
 }
 
 .main__exchange-container__title {
@@ -121,4 +122,34 @@ main {
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.main__exchange-container .background-img {
+  width: 195px;
+  height: 195px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  
+  background-image: url("https://gist.githack.com/CabosManuel/a41b3dab2c254fc174e2fd43e1427a36/raw/914acbe390170988cbc810bf63057774db954741/bitcoin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main__exchange-container h2 {
+  margin-bottom: 24px;
+  
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+}
+
+.main__exchange-container p {
+  margin-bottom: 48px;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
 }
