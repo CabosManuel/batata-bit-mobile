@@ -238,3 +238,23 @@ main {
 .currency-table__container .up {
   background-image: url("https://gist.githack.com/CabosManuel/2350e1844f8699ddfc35744f0cb48513/raw/7cac2b70e223e904277aeefe47eefb426d79ce15/trending-up.svg");
 }
+
+.currency-table__date {
+  width: 190px;
+  height: 31px;
+
+  margin: 0 auto;
+  margin-top: 16px;
+  padding: 8px;;
+ 
+  background-color: var(--soft-orange);
+  border-radius: 10px;
+}
+
+.currency-table__date p {
+  margin: 0;
+
+  font-size: 1.2rem;
+  line-height: 1.45rem;
+  color: var(--warm-black);
+}
