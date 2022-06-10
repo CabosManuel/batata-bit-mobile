@@ -33,7 +33,7 @@
       <section class="main-tables-container">
         
         <div class="main-currency-table">
-          <p class="currency-table__table">Monedas</p>
+          <p class="currency-table__title">Monedas</p>
           <div class="currency-table__container">
             <table>
               <tr>
@@ -55,7 +55,7 @@
             </table>
           </div>
           <div class="currency-table__date">
-            <p><b>Actualizado:</b> <script> document.write(new Date().toLocaleString());</script></p>
+            <p><b>Actualizado:</b> <script>document.write(new Date().toLocaleString('es-pe', {day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'}));</script></p>
           </div>
         </div>
         
