@@ -273,3 +273,43 @@ main {
   line-height: 1.45rem;
   color: var(--warm-black);
 }
+
+.main-tables-container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  overflow: scroll;
+}
+
+.main-tables-container::-webkit-scrollbar {
+  display: none;
+}
+
+.main-currency-table {
+  margin-left: var(--margin-center-table);
+  margin-right: calc(var(--margin-center-table) / 2);
+}
+
+.main-commission-table {
+  margin-right: var(--margin-center-table);
+  margin-left: calc(var(--margin-center-table) / 2);
+}
+
+.main-currency-table {
+  right: -40px;
+}
+
+.main-tables-container .right-arrow {
+  width: 12px;
+  height: 12px;
+
+  position: absolute;
+  top: 300px;
+
+  background-image: url("https://gist.githack.com/CabosManuel/7a56bc251eafbbcbac0a78a106a2630d/raw/b8fe714481549af687447ad811847c3f1d3a2db1/right-arrow.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
