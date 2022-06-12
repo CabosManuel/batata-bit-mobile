@@ -272,15 +272,18 @@ main {
   color: var(--warm-black);
 }
 
+/* ******** TABLE SLIDE START ******* */
 .main-tables-container {
   width: 100%;
 
   display: flex;
   justify-content: space-between;
 
-  overflow: scroll;
+  overflow: scroll; /* Lo que sobresale hacerlo deslizable */
+  scroll-behavior: smooth; /* Transición suave */
 }
 
+/* Hacer invisible barra de scroll horizontal */
 .main-tables-container::-webkit-scrollbar {
   display: none;
 }
@@ -314,3 +317,5 @@ main {
   left: 31px;
   transform: rotate(180deg);
 }
+
+/* ******** TABLE SLIDE END ******* */
