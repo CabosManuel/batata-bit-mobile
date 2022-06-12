@@ -426,3 +426,24 @@ main {
 .eye { background-image: url("https://gist.githack.com/CabosManuel/d9dbbe6d6dda95a3382000949be85fcc/raw/a9de9bb9834823fc0c39c215b939ca64072d34c0/eye.svg"); }
 .dollar { background-image: url("https://gist.githack.com/CabosManuel/272f1e59fe68c2f04d14f8bdf7954e1b/raw/079416f521c4639a3fd76929e199dc084189c7b1/dollar-sign.svg"); }
 .check { background-image: url("https://gist.githack.com/CabosManuel/98e530278767eb38ce2ad5ded87b38d4/raw/80279194bdd2fe04c0870a2701e8855a223b6f29/check-circle.svg"); }
+
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 70vh;
+
+  background-image: url("https://i.postimg.cc/bJrVXk5Z/bitcoinbaby2x.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.bitcoin-img-container h2 {
+  padding-top: 64px;
+  
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--white);
+}
