@@ -10,8 +10,8 @@
   --soft-orange: #ffe9d5;
   --blue: #1a9af7;
   --soft-blue: #e7f5ff;
-  --warm-black: #282623;
-  --black: #201e1c;
+  --warm-black: #201e1c;
+  --black: #282623;
   --gray: #bababa;
   --off-white: #faf8f7;
   --white: #fff;
@@ -324,7 +324,7 @@ main {
   width: 100%;
   min-width: 320px;
   height: auto;
-  padding: 64px 16px 47px 16px;
+  padding: 64px 0 47px 0;
   
   position: relative;
 
@@ -371,3 +371,58 @@ main {
   font-weight: 500;
   line-height: 1.8rem;
 }
+
+.product-cards__container {
+  max-width: 754px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-detail__card {
+  width: auto;
+  min-width: 288px;
+  max-width: 345px;
+
+  padding: 16px 20px 22px 20px;
+  margin: 0 16px;
+  margin-bottom: 16px;
+
+  background-color: var(--black);
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product__card-title {
+  margin-bottom: 10px;
+  
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  color: var(--white);
+}
+
+.product__card-body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--gray)
+}
+
+.product-detail__card .icon-card {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 12px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.clock { background-image: url("https://gist.githack.com/CabosManuel/6bc69345ec5970503fce82e17725cc7a/raw/0eae9085d44ca9547c8d2c76bafa2461a04de58f/clock.svg"); }
+.eye { background-image: url("https://gist.githack.com/CabosManuel/d9dbbe6d6dda95a3382000949be85fcc/raw/a9de9bb9834823fc0c39c215b939ca64072d34c0/eye.svg"); }
+.dollar { background-image: url("https://gist.githack.com/CabosManuel/272f1e59fe68c2f04d14f8bdf7954e1b/raw/079416f521c4639a3fd76929e199dc084189c7b1/dollar-sign.svg"); }
+.check { background-image: url("https://gist.githack.com/CabosManuel/98e530278767eb38ce2ad5ded87b38d4/raw/80279194bdd2fe04c0870a2701e8855a223b6f29/check-circle.svg"); }
