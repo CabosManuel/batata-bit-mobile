@@ -319,3 +319,55 @@ main {
 }
 
 /* ******** TABLE SLIDE END ******* */
+
+.main__product-detail {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 64px 16px 47px 16px;
+  
+  position: relative;
+
+  color: #808080;
+  background-color: var(--warm-black);
+}
+
+.product-detail__batata-logo {
+  width: 38px;
+  height: 27px;
+
+  position: absolute;
+  top: -13.5px;
+  left: calc(50% - 19px);
+
+  background-image: url("https://gist.githack.com/CabosManuel/6c12d060cc2a8b6424d1763897121da0/raw/9fcdd25caf44ebd65d9bb6adadb9576018b07f03/batata.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail__title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.product-detail__title h2 {
+  margin-bottom: 24px;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--white);
+}
+
+.product-detail__title p {
+  margin-bottom: 32px;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
