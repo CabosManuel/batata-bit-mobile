@@ -466,6 +466,7 @@ main {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 2.6rem;
+  color: var(--warm-black);
 }
 
 .plans__title p {
@@ -474,6 +475,5 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-
   color: var(--warm-gray);
 }
