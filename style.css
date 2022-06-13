@@ -17,7 +17,7 @@
   --off-white: #faf8f7;
   --white: #fff;
   /* Spaces */
-  --margin-center-table: calc(50% - calc(235px / 2));
+  --margin-center-table: calc(50% - calc(230px / 2));
 }
 
 html {
