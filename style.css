@@ -5,6 +5,9 @@
 }
 
 :root {
+  /* Fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
   /* Colors */
   --orange: #f7931a;
   --soft-orange: #ffe9d5;
@@ -22,7 +25,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'DM Sans', sans-serif; 
+  font-family: var(--font-dm-sans); 
   scroll-behavior: smooth;
 }
 
@@ -161,14 +164,14 @@ main {
   width: fit-content;
   max-width: fit-content;
   height: auto;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter);
 }
 
 .main-currency-table .currency-table__title, .main-commission-table .commission-table__title {
   margin-bottom: 12px;
   margin-left: 16px;
 
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-dm-sans);
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.3rem;
@@ -451,7 +454,7 @@ main {
 }
 
 .main-plans-container {
-  background-color: var(--orange);
+  background-color: var(--off-white);
 }
 
 .plans__title {
@@ -479,23 +482,144 @@ main {
 }
 
 .plans-container__slider {
+  height: 340px;
+
+  margin: 0 auto;
+  padding-top: 18px;
+
   display: flex;
-  flex-wrap: wrap;
+  /* justify-content: center; */
+  overflow: scroll;
 }
 
 .plans-container__card {
   width: 190px;
+  min-width: 190px;
+  max-height: 247px;
   margin: 0 8px;
-  padding: 31px 20px 24px;
+  padding: 31px 16px 24px;
   
+  position: relative;
+
   text-align: center;
-  background-color: var(--blue);
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.plans-container__card .plans__title {
+.plans-container__card  .recommended-tag {
+  width: 100px;
+  height: 31px;
+  padding-top: 8px;
+
+  position: absolute;
+  top: -15.5px;
+  left: calc(50% - 50px);
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 10px;
+}
+
+.plan-card .plan-card__title {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
 
-  
+  color: var(--black);
 }
+
+.plan-card .plan-card__price {
+  margin: 16px 0 6px;
+  font-family: var(--font-inter);
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: var(--gray);
+  line-height: 6.3rem;
+  letter-spacing: -0.4rem;
+}
+
+.plan-card__price span {
+  margin: 8px 0;
+
+  position: relative;
+  top: -30px;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: normal;
+}
+
+.plan-card .recommended-price {
+  color: var(--black);
+}
+
+.plan-card .plan-card__body {
+  margin-bottom: 16px;
+  
+  font-family: var(--font-inter);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  color: var(--warm-gray);
+}
+
+.plan-card .plan-card__button {
+	width: 150px;
+  height: 48px;
+
+  padding: 0 16px;
+  
+  font: var(--font-dm-sans);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+
+	color: var(--gray);
+  background-color: var(--off-white);
+  border: 2px solid var(--gray);
+  border-radius: 4px;
+
+	outline: inherit;
+	cursor: pointer;
+}
+
+.plan-card .recommended-button {
+  color: var(--warm-black);
+  border-color: var(--orange);
+}
+
+.plan-card__button span {
+  width: 19px;
+  height: 19px;
+  
+  float: right;
+  
+  background-image: url("https://gist.githack.com/CabosManuel/e8b1fb5ca8bcadd1c4736d418b9e3a25/raw/60b38d076f63731381d4f5a7fe83b51fbf43d10e/gray-right-arrow.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.plan-card__button .recommended-arrow {
+  background-image: url("https://gist.githack.com/CabosManuel/91f26bab7bf31d24b55d812ef2582f00/raw/a655dc67a0192dc75f88baa4ae5d908f0affcb26/orange-right-arrow.svg");
+}
+
+/* .plans-container__slider .right-arrow-gray, .left-arrow-gray {
+  width: 14px;
+  height: 14px;
+
+  position: absolute;
+
+  background-image: url("https://gist.githack.com/CabosManuel/c1aeb77dd167513ef1b3ae7866b42f40/raw/0949cbe97f76770bf0870a2e7e3f459a971143d1/right-arrow-gray.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.plans-container__slider .left-arrow-gray {
+  rotate: 180deg;
+} */
