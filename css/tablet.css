@@ -1,0 +1,45 @@
+.main-tables-container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.main-currency-table, 
+.main-commission-table {
+  margin: 0;
+  padding: 0;
+}
+
+.main-tables-container .left-arrow, 
+.main-tables-container .right-arrow {
+  width: 0;
+  height: 0;
+}
+
+.bitcoin-img-container {
+  height: 25vh;
+  background-image: url("https://i.postimg.cc/mDSvCb7f/bitcoinbaby-tablet.png");
+}
+
+.bitcoin-img-container h2 {
+  padding-top: 12.5vh;
+  font-size: 4.2rem;
+}
+
+.plans-container__slider {
+  justify-content: center;
+}
+
+.monthly,
+.always {
+  margin: 0;
+}
+
+.plans-container__slider .left-arrow-gray,
+.plans-container__slider .right-arrow-gray {
+  width: 0;
+  height: 0;
+}
+
+.footer__logo img {
+  width: 140px;
+}
