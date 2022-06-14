@@ -20,7 +20,8 @@
   --off-white: #faf8f7;
   --white: #fff;
   /* Spaces */
-  --margin-center-table: calc(50% - calc(230px / 2));
+  --margin-center-table: calc(50% - (230px / 2));
+  --margin-center-plan: calc(50% - (190px / 2));
 }
 
 html {
@@ -454,6 +455,8 @@ main {
 }
 
 .main-plans-container {
+  padding-bottom: 32px;
+  position: relative;
   background-color: var(--off-white);
 }
 
@@ -482,14 +485,19 @@ main {
 }
 
 .plans-container__slider {
-  height: 340px;
+  width: 100%;
+  height: 280px;
 
-  margin: 0 auto;
   padding-top: 18px;
 
   display: flex;
-  /* justify-content: center; */
-  overflow: scroll;
+  overflow-x: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-type: x proximity;
+}
+
+.plans-container__slider::-webkit-scrollbar {
+  display: none;
 }
 
 .plans-container__card {
@@ -500,6 +508,7 @@ main {
   padding: 31px 16px 24px;
   
   position: relative;
+  scroll-snap-align: center;
 
   text-align: center;
   background-color: var(--white);
@@ -608,11 +617,13 @@ main {
   background-image: url("https://gist.githack.com/CabosManuel/91f26bab7bf31d24b55d812ef2582f00/raw/a655dc67a0192dc75f88baa4ae5d908f0affcb26/orange-right-arrow.svg");
 }
 
-/* .plans-container__slider .right-arrow-gray, .left-arrow-gray {
+.plans-container__slider .right-arrow-gray, .left-arrow-gray {
   width: 14px;
   height: 14px;
 
   position: absolute;
+  top: calc(50% - -62px);
+  right: 31px;
 
   background-image: url("https://gist.githack.com/CabosManuel/c1aeb77dd167513ef1b3ae7866b42f40/raw/0949cbe97f76770bf0870a2e7e3f459a971143d1/right-arrow-gray.svg");
   background-size: contain;
@@ -621,5 +632,17 @@ main {
 }
 
 .plans-container__slider .left-arrow-gray {
-  rotate: 180deg;
-} */
+  transform: rotate(180deg);
+  right: 0;
+  left: 31px;
+}
+
+.monthly {
+  margin-left: var(--margin-center-plan);
+  margin-right: calc(var(--margin-center-plan) / 5);
+}
+
+.always {
+  margin-left: calc(var(--margin-center-plan) / 5);
+  margin-right: var(--margin-center-plan);
+}
