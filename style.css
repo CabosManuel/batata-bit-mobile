@@ -646,3 +646,33 @@ main {
   margin-left: calc(var(--margin-center-plan) / 5);
   margin-right: var(--margin-center-plan);
 }
+
+footer {
+  width: 100%;
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--orange);
+}
+
+.footer__social-container .social {
+  list-style: none;
+}
+
+.social li {
+  margin-bottom: 8px;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.social a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer__logo img {
+  width: 64px;
+}
