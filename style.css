@@ -441,7 +441,8 @@ main {
   min-width: 320px;
   height: 70vh;
 
-  background-image: url("https://i.postimg.cc/bJrVXk5Z/bitcoinbaby2x.jpg");
+  /* background-image: url("https://i.postimg.cc/bJrVXk5Z/bitcoinbaby2x.jpg"); */
+  background-image: url("https://i.postimg.cc/vmGtqjTM/bitcoinbaby2x.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
