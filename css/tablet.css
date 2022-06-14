@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.main-commission-table::-webkit-scrollbar {
+  display: hidden;
+}
+
 .main-currency-table, 
 .main-commission-table {
   margin: 0;
@@ -27,6 +31,10 @@
 
 .plans-container__slider {
   justify-content: center;
+}
+
+.plans-container__slider::-webkit-scrollbar {
+  display: hidden;
 }
 
 .monthly,

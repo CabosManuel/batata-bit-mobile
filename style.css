@@ -281,17 +281,20 @@ main {
 /* ******** TABLE SLIDE START ******* */
 .main-tables-container {
   width: 100%;
+  height: 280px;
 
   display: flex;
   justify-content: space-between;
 
-  overflow: scroll; /* Lo que sobresale hacerlo deslizable */
+  overflow-x: scroll; /* Lo que sobresale hacerlo deslizable */
+  overscroll-behavior: contain; 
+  scroll-snap-type: x proximity; 
   scroll-behavior: smooth; /* Transición suave */
 }
 
-/* Hacer invisible barra de scroll horizontal */
-.main-tables-container::-webkit-scrollbar {
-  display: none;
+.main-currency-table, 
+.main-commission-table {
+  scroll-snap-align: center;
 }
 
 .main-currency-table {
@@ -494,10 +497,6 @@ main {
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x proximity;
-}
-
-.plans-container__slider::-webkit-scrollbar {
-  display: none;
 }
 
 .plans-container__card {
